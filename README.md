@@ -10,9 +10,9 @@ I have create a php MVC framework for the smiggle chat other technologies used i
 
 Install / place entire files with entire folders in root directory
 
-1. configure database details in the config.php file
+1. CREATE YOUR DATABASE IN phpmyadmin/mysql directly (COULD CALL IT CHAT), then configure database details in the config.php file
 	define('DB_HOST', 'localhost');
-	define('DB_NAME', 'chat'); as follows
+	define('DB_NAME', 'chat'); and other details like user and password
 2. use all tables and sql provided in smiggle chat  sql file to create database tables.                                               
 2.1 make sure users and unread_messages tables are populated with data from smiggle_chat sql file
 3. they are 4 users all have password = in ,                                                
