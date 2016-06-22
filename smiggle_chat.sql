@@ -76,3 +76,19 @@ INSERT INTO `users` (`id`, `email`, `password`, `login_status`) VALUES
 (2, 'julia@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off'),
 (3, 'lionel@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off'),
 (4, 'martin@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off');
+
+--
+-- Table structure for table `messages`
+--
+
+CREATE TABLE IF NOT EXISTS `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sent_from` int(11) NOT NULL,
+  `sent_to` int(11) NOT NULL,
+  `message` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
