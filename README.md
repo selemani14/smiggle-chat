@@ -1,6 +1,9 @@
-# smiggle-chat
+# smiggle-chat                                                
+                                                     
+*CODE PERFECTLY WORKING IF ANY PROBLEM PLEASE EMAIL ME demuenator@gmail.com FOR A 2 SECOND TWIK IF ANY (should be smooth)
+
 Description
-*code perfectly working if any problem email me at demuenator@gmail.com (should be smooth)
+
 I have create a php MVC framework for the smiggle chat other technologies used include ajax, json, css,html,mysql ...
 
   Insructions
