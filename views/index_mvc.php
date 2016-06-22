@@ -225,7 +225,7 @@ body
 
 <ul class="list-group" style="margin-left:0px; padding-left:0px;">
 <h5 class="list-group-item active" style='background: #da7112; width:220px;border-style:none; color:#fff;margin-left:0px; padding-left:0px;"'>
-   Users List
+   Users List <br/>CHOOSE WHO TO CHAT WITH
   </h5>
 <?php
 $count = 1;
@@ -263,6 +263,7 @@ $chat_status </span><br />UNREAD:<b>".$unread_message_num[$add_count]."</b></li>
 //$unread_message_num[$add_count]
 ?>
 </ul>
+<input type='hidden' class='cheks' value ='not_active' />
 <input type='hidden' class='register_link'  />
 <input type='hidden' class='use_num'  value="<?php echo $_SESSION['user_id']; ?>" />
 
