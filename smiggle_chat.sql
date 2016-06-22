@@ -55,3 +55,24 @@ INSERT INTO `unread_messages` (`id`, `sent_from`, `sent_to`, `unread_messages`) 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `login_status` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `login_status`) VALUES
+(1, 'james@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off'),
+(2, 'julia@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off'),
+(3, 'lionel@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off'),
+(4, 'martin@gmail.com', '13b5bfe96f3e2fe411c9f66f4a582adf', 'off');
