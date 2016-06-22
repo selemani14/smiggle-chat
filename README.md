@@ -1,6 +1,6 @@
 # smiggle-chat
 Description
-
+*code perfectly working if any problem email me at demuenator@gmail.com (should be smooth)
 I have create a php MVC framework for the smiggle chat other technologies used include ajax, json, css,html,mysql ...
 
   Insructions
