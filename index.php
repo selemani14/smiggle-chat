@@ -8,7 +8,7 @@ require_once('app/chatPagecontroller.php');
 require_once('app/restfulAPIcontroller.php');
 require_once('app/indexcontroller.php');
 require_once('app/ioc.php');
-require_once('app/config.php');
+require_once('config.php');
 
 // Register databased details
 IOC::register('database', function()
