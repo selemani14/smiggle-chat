@@ -23,9 +23,7 @@ user = martin@gmail.com
 password = in , 
 4. RESTFUL API:                                                                                  
 This can be access using format index.php?smiggle=restfulAPI/getMessages/nameoffirstuser/name of second use
-                      example index.php?smiggle=restfulAPI/getMessages/james@gmail.com/julia@gmail.com
- 4.1 it returns a JSON with conversations like 
- [{"user":"james@gmail.com","message":"how are you","date":"2016-09-13"},{"user":"juli@gmail.com","message":"good 
-
-james","date":"2016-09-13"},{"user":"james@gmail.com","message":"how are you","date":"2016-09-13"}]
+example index.php?smiggle=restfulAPI/getMessages/james@gmail.com/julia@gmail.com                           
+ 4.1 it returns a JSON with conversations like                                                              
+ [{"user":"james@gmail.com","message":"how are you","date":"2016-09-13"},{"user":"juli@gmail.com","message":"good james","date":"2016-09-13"},{"user":"james@gmail.com","message":"how are you","date":"2016-09-13"}]
 
