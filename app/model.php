@@ -237,7 +237,7 @@ public function selectUsersStatus($id) {
 	public function insertMessages($param1, $param2, $messages, $email) {
 	
 		$handle = self::getInstance();
-		$query = $handle->query("INSERT INTO  `chat`.`messages` (
+		$query = $handle->query("INSERT INTO  `messages` (
 	`id` ,
 	`sent_from` ,
 	`sent_to` ,
