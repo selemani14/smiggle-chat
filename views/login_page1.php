@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,6 +12,10 @@ html,body{
 	margin-left: 0px;
         margin-right: 0px;
 		background-color:#da7112;
+		background-image:url(couple1.jpg);
+		background-attachment:fixed;
+		background-position:center;
+		background-repeat:no-repeat;
 }
 body{font-family:"Open Sans", sans-serif;font-size:16px;line-height:24px;font-weight:300;color:#555555}
 h1{font-weight:300;font-size:35px;line-height50px}h2{font-weight:300;font-size:32px;line-height:48px}
@@ -220,7 +224,7 @@ width: 60%;
 
 <div class='container'>
 <form action="index.php?smiggle=index/index" method="post"  enctype="multipart/form-data" class'login_form'>
-<h1>WELCOME TO SMIGGLE CHAT !</H1>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WELCOME TO SMIGGLE CHAT !</H1>
 <?php
 if(isset($message))
 {
