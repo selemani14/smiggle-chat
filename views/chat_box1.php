@@ -43,7 +43,7 @@ foreach($row as $row)
 	?>
 		 
   	 
-		<div class="speech-bubble">
+		<div class="speech-bubble" style="color:#428bca; font-weight:bold; text-transform:uppercase;">
   <div class="arrow bottom right"></div>
 		No Data
 		</div>
