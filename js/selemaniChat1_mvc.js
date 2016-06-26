@@ -1,24 +1,5 @@
 $(document).ready(function(){
-						 
-$("a").click(function(){
-						  $(".cheks").val('ok');
-		var linkss = $(this).children(".directioner").text();
-		var unread_num = $(this).children("b");
-		var regist1 = $(".register_link").val(linkss);
-		
-		var plitsLink= linkss.split("=");
-		var indivLinks = plitsLink[1];
-		var regist = indivLinks.split("/");
-        var param = regist[3];
-		$.get("index.php?smiggle=chat/reset_unread_messages/"+param, function(data, status){
-					//$( unread_num).html(data);
-		});
-		$.get(linkss, function(data, status){
-		$(".chatts").html(data);
-		});
-		
-	});							 
-
+						   
 	function getUserStatus()
 	{
 		var allSpans = document.getElementsByTagName("span");
@@ -89,7 +70,7 @@ $("a").click(function(){
 			  });
 		  }
 		getUserStatus();
-	   }, 1000);
+	   }, 3000);
 	}
 	
 	
@@ -112,34 +93,46 @@ $("a").click(function(){
 		var sent_from = $(".sent_from").val();
 		var sent_to =  $(".sent_to").val();
 		var message =  $("#message").val();
-		var checks =  $(".cheks").val();
-		if( $(".cheks").val() !== 'not_active')
-		{
-			$.post("index.php?smiggle=chat/insert_chat",
-			 {
-				sent_by: sent_from,
-				sent_to: sent_to,
-				message: message
-			  },
-			 function(data,status){
-				getmess();
-			 });
-		 }
+
+		$.post("index.php?smiggle=chat/insert_chat",
+		 {
+			sent_by: sent_from,
+			sent_to: sent_to,
+			message: message
+		  },
+		 function(data,status){
+			getmess();
+		 });
+		
 		
 	});
 
 	function getmess(){
 		var linkss = $( ".linked" ).val();
-
 		$.get(linkss, function(data, status){
 		$(".chatts").html(data);
 		$("#message").val('')
 		});
-		
 	}
 
 
 
-	
+	$("a").click(function(){
+		var linkss = $(this).children(".directioner").text();
+		var unread_num = $(this).children("b");
+		var regist1 = $(".register_link").val(linkss);
+		
+		var plitsLink= linkss.split("=");
+		var indivLinks = plitsLink[1];
+		var regist = indivLinks.split("/");
+        var param = regist[3];
+		$.get("index.php?smiggle=chat/reset_unread_messages/"+param, function(data, status){
+					//$( unread_num).html(data);
+		});
+		$.get(linkss, function(data, status){
+		$(".chatts").html(data);
+		});
+		
+	});	
 	
 });
