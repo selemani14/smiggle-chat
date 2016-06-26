@@ -51,7 +51,7 @@ if($row !== 0)
 	{
 		?>
 			 
-		<div class="speech-bubble">
+		<div class="speech-bubble" style="color:#428bca; font-weight:bold; text-transform:uppercase;">
   <div class="arrow bottom right"></div>
 		No Data
 		</div>
