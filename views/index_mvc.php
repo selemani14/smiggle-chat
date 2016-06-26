@@ -5,6 +5,15 @@
   <title>chat system</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <style type="text/css">
+html,body{
+	margin-left: 0px;
+        margin-right: 0px;
+		background-color:#da7112;
+		background-image:url(couple1.jpg);
+		background-attachment:fixed;
+		background-position:center;
+		background-repeat:no-repeat;
+}
 .circle
 {
 	background:#003366;	
@@ -104,7 +113,7 @@ background-color: green;
 #apDiv1 {
 
 	width: 100%;
-	height:490px;
+	height:450px;
 	background-color: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	border-radius: 9px;
@@ -118,11 +127,7 @@ background-color: green;
     width: 100%;
 	overflow:scroll;
 }
-body
-{
-	
-	background-color:#da7112;
-}
+
 .b1
 {
 	height: 100px;
@@ -167,7 +172,7 @@ body
 }
 .chatter
 {
-	color: #e99409;
+	color: #428bca;
 	font-family: century gothic;
 	font-weight:bold;
 	font-size:15px;
@@ -184,7 +189,7 @@ body
         
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top" style='background-color:#da7112; border-bottom-color:#da7112;'>
+<nav class="navbar navbar-inverse navbar-fixed-top" style='background-color:transparent; border-bottom-color:transparent;'>
   <div class="container-fluid">
     <div class="navbar-header">
       <div class="navbar-brand" style='color:#fff;font-family: century gothic;'>SMIGGLE</div>
@@ -192,7 +197,7 @@ body
     <div>
      
       <ul class="nav navbar-nav navbar-right">
-        <li style='color:#fff;font-family: century gothic;margin-top:7px;'><?php echo $_SESSION['user']; ?>&nbsp;&nbsp;<img class='img-circle' src='person.gif' width='20' />&nbsp;</li>
+        <li style='color:#fff;font-family: century gothic;margin-top:7px;'><de class="label label-primary" style='font-size:11px;font-family: century gothic; text-transform:uppercase;'><?php echo $_SESSION['user']; ?></de>&nbsp;&nbsp;<img class='img-circle' src='person.gif' width='20' />&nbsp;</li>
             <li style='margin-top:0px; padding-top:0px;'><a href="index.php?smiggle=index/logout" style='color:#fff;font-family: century gothic;margin-top:0px; padding-top:9px; display:block;'>lOGOUT</a></li>
       </ul>
     </div>
@@ -207,8 +212,7 @@ body
 
     <div id="apDiv1">
         <div class='chatts'>
-        &nbsp;
-        </div>
+        <h1 align="center"><BR/><BR/>CLICK ON LINK ON AN EMAIL ADDRESS<BR/> YOUR RIGHT &rarr; <BR/>TO CHOOSE<BR/> WHO TO CHAT WITH<BR/> START CHATING</h1>        </div>
       
     </div>
     <div class='row'>
@@ -224,9 +228,7 @@ body
 <div class='col-md-2' style="margin-left:0px; padding-left:0px;">
 
 <ul class="list-group" style="margin-left:0px; padding-left:0px;">
-<h5 class="list-group-item active" style='background: #da7112; width:220px;border-style:none; color:#fff;margin-left:0px; padding-left:0px;"'>
-   Users List <br/>CHOOSE WHO TO CHAT WITH
-  </h5>
+
 <?php
 $count = 1;
 $counts = 0;
@@ -246,16 +248,16 @@ $add_count = 0;
 	  {
 	  	if($row['login_status'] == 'off')
 		{
-			$chat_status ="<font color='#fff'>Status:</font> <font color='#cdc108'>Start chatting..</font>";
-			$log_status ="<font color='#cdc108'>offline</font>";
+			$chat_status ="<de class='label label-danger' style='font-size:11px;'><font color='#fff'>Status:</font> <font color='#fff'>Start chatting..</font></de><br/>";
+			$log_status ="<de class='label label-danger' style='font-size:11px;'><font color='#fff'>offline</font></de><br/>";
 		}
 		else
 		{
-			$chat_status = "<font color='#fff'>Status:</font> <font color='#77ec88'>continue chatting..</font>";
-			$log_status ="<font color='#77ec88'>online</font>";
+			$chat_status = "<de class='label label-success' style='font-size:11px;'><font color='#fff'>Status:</font> <font color='#fff'>continue chatting..</font></de><br/>";
+			$log_status ="<de class='label label-success' style='font-size:11px;'><font color='#fff'>online</font></de><br/>";
 		}
-	   echo "<a  class'btn btn-primary james$count' data-toggle='modal' data-target='.bs-example-modal-sm'><li class='list-group-item' style=' width:240px;border-style:none; color:#fff;font-family: calibri;font-size:13px;text-transform: uppercase;background: #da7112;margin-left:0px; padding-left:0px;'> <img class='img-circle' src='person.gif' width='20' />&nbsp;&nbsp;".$row['email']." | <span>".$log_status."  <br/>
-$chat_status </span><br />UNREAD:<b>".$unread_message_num[$add_count]."</b></li><div class='directioner'>index.php?smiggle=chat/Retrieve_chat_box1/".$logedIn_id."/".$row['id']."</div></a> <h6>".$row['id']."</h6>";
+	   echo "<a  class'btn btn-primary james$count' data-toggle='modal' data-target='.bs-example-modal-sm'><li class='list-group-item' style=' width:240px;border-style:none; color:#fff;font-family: calibri;font-size:12px;text-transform: uppercase;background:transparent;margin-left:0px; padding-left:0px;'> <img class='img-circle' src='person.gif' width='20' />&nbsp;&nbsp;<de class='label label-primary' style='font-size:11px;'>".$row['email']."</de> | <span>".$log_status."  <br/> 
+$chat_status </span><br /><de class='label label-primary' style='font-size:12px;'>UNREAD:<b>".$unread_message_num[$add_count]."</b></de></li><div class='directioner'>index.php?smiggle=chat/Retrieve_chat_box1/".$logedIn_id."/".$row['id']."</div></a> <h6>".$row['id']."</h6><br/><hr color='#FF9933' style='background: orange; height:1px; margin:0px; padding:0px; color: orange;' />";
 	  $add_count++;
 	  }
 	  
@@ -263,7 +265,6 @@ $chat_status </span><br />UNREAD:<b>".$unread_message_num[$add_count]."</b></li>
 //$unread_message_num[$add_count]
 ?>
 </ul>
-<input type='hidden' class='cheks' value ='not_active' />
 <input type='hidden' class='register_link'  />
 <input type='hidden' class='use_num'  value="<?php echo $_SESSION['user_id']; ?>" />
 
