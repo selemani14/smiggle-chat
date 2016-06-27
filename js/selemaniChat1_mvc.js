@@ -109,15 +109,19 @@ $(document).ready(function(){
 
 	function getmess(){
 		var linkss = $( ".linked" ).val();
-		$.get(linkss, function(data, status){
-		$(".chatts").html(data);
-		$("#message").val('')
-		});
+		if($( ".cheese" ).val() == 'ok')
+		{
+			$.get(linkss, function(data, status){
+			$(".chatts").html(data);
+			$("#message").val('')
+			});
+		}
 	}
 
 
 
 	$("a").click(function(){
+		$( ".cheese" ).val('ok')
 		var linkss = $(this).children(".directioner").text();
 		var unread_num = $(this).children("b");
 		var regist1 = $(".register_link").val(linkss);
