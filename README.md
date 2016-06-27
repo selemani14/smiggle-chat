@@ -2,6 +2,8 @@
                                                   
 *CODE PERFECTLY WORKING IF ANY PROBLEM PLEASE EMAIL ME demuenator@gmail.com FOR A 2 SECOND TWIK IF ANY (should be smooth)
 
+*NB TO CHAT ONCE LOGGEDIN CLICK ON THE EMAIL ADDRESS ON THE RIGHT BEFORE SENDING MESSAGES TO SELECT USER
+
 ![screenshot1](https://cloud.githubusercontent.com/assets/20079524/16377991/704ef126-3c69-11e6-871e-4841ca712580.PNG)
 
 Description
