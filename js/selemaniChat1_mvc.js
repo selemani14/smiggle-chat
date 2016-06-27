@@ -115,6 +115,7 @@ $(document).ready(function(){
 			$(".chatts").html(data);
 			$("#message").val('')
 			});
+			$("#message").val('');
 		}
 	}
 
