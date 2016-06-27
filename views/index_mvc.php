@@ -265,6 +265,7 @@ $chat_status </span><br /><de class='label label-primary' style='font-size:12px;
 //$unread_message_num[$add_count]
 ?>
 </ul>
+<input type='hidden' class='cheese' value='not_ok' />
 <input type='hidden' class='register_link'  />
 <input type='hidden' class='use_num'  value="<?php echo $_SESSION['user_id']; ?>" />
 
